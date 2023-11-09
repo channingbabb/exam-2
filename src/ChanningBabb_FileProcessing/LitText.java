@@ -15,9 +15,9 @@ public abstract class LitText implements LitLyzer {
 
     @Override
     public Map<String, Integer> count(Counter counter, ArrayList<String> categories) {
-        HashMap<String, Integer> countMap = new HashMap();
-        for (String s : categories) {
-            countMap.put(s, counter.count(contents));
+        HashMap<String, Integer> countMap = new HashMap<>();
+        for (String s : categories) { // for each category in categories
+            countMap.put(s, counter.count(contents)); // add the category and the count of the category to the map
         }
         return countMap;
     }
