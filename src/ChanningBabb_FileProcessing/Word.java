@@ -7,9 +7,9 @@ public class Word extends LitText {
     private ArrayList<Character> letters;
 
     public Word(String text) {
-        letters = new ArrayList<>();
-        for (char c : text.toCharArray()) {
-            letters.add(c);
+        letters = new ArrayList<>(); // initialize letters
+        for (char c : text.toCharArray()) { // for each character in text
+            letters.add(c); // add the character to letters
         }
     }
 
